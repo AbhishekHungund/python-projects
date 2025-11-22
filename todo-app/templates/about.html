@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block body %}
+<div class="container my-5">
+
+    <h1 class="mb-3">About This Application</h1>
+    <p class="lead">
+        This is a simple Todo application built with Flask and SQLAlchemy.  
+        It allows you to create, update, and delete tasks efficiently.
+    </p>
+
+    <hr>
+
+    <h3>Application Info</h3>
+    <ul class="list-group my-3">
+        <li class="list-group-item"><strong>App Name:</strong> {{ info.app_name }}</li>
+        <li class="list-group-item"><strong>Version:</strong> {{ info.version }}</li>
+        <li class="list-group-item"><strong>Developer:</strong> {{ info.developer }}</li>
+    </ul>
+
+    <p class="mt-4">
+        This project is meant to help you learn Flask, templates, routing, and CRUD operations.
+        Feel free to improve and customize it!
+    </p>
+
+</div>
+{% endblock %}
